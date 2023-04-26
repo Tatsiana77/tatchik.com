@@ -22,7 +22,7 @@ public class Viewer {
         JPanel renderPanel = new JPanel() {
             public void paintComponent(Graphics g) {
                 Graphics2D g2 = (Graphics2D) g;
-                g2.setColor(Color.BLUE);
+                g2.setColor(Color.GREEN);
                 g2.fillRect(0, 0, getWidth(), getHeight());
 
                 List<Triangle> tris = new ArrayList<>();
@@ -33,7 +33,7 @@ public class Viewer {
                 tris.add(new Triangle(new Vertex(80, 80, 80),
                         new Vertex(-80, -80, 80),
                         new Vertex(80, -80, -80),
-                        Color.WHITE));
+                        Color.BLUE));
                 tris.add(new Triangle(new Vertex(-80, 80, -80),
                         new Vertex(80, -80, -80),
                         new Vertex(80, 80, 80),
